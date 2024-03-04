@@ -1,0 +1,78 @@
+{
+	"compiler": {
+		"version": "0.6.12+commit.27d51765"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "bool",
+						"name": "returnValue",
+						"type": "bool"
+					}
+				],
+				"name": "priceEvent",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "bid",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/events.sol": "ValueAlert"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/events.sol": {
+			"keccak256": "0xe41673564eb5396ce9575e7704ce2435932205bb176a0238935dff77a1a385c0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://be6a3a2a558a6ea76bed96415c1d6ede7ae8bd79a3806235f05c6f973bea87be",
+				"dweb:/ipfs/QmYPbauwzJDyFZvHUFFg17noD7vsWriU3YpKURQRaw4vYr"
+			]
+		}
+	},
+	"version": 1
+}

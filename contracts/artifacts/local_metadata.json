@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.6.12+commit.27d51765"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getValue",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "hello",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/local.sol": "local"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/local.sol": {
+			"keccak256": "0xee8ac6070dcee9d8d48ac5e233b6d49c0be18e6e232a307fda8f041908108ed5",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://10cc9175c5603baa91a4aae536649297eda19eacb2ea035fb81ffe3ba73d988b",
+				"dweb:/ipfs/QmdGLbrQE9nuV7S3hBifuAuDQpTaXiMsv4QguVJwAmKGjN"
+			]
+		}
+	},
+	"version": 1
+}

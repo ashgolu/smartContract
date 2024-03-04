@@ -1,0 +1,115 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "_index",
+						"type": "uint8"
+					}
+				],
+				"name": "readData",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "_index",
+						"type": "uint8"
+					}
+				],
+				"name": "readDynamicArray",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "_index",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "_value",
+						"type": "uint8"
+					}
+				],
+				"name": "setData",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_phoneno",
+						"type": "uint256"
+					}
+				],
+				"name": "setDataforDynamicArray",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"dataTypes.sol": "arraySample"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"dataTypes.sol": {
+			"keccak256": "0x3b9dafa5f19c6f6cd1312faee9001b17a7c2a38139c3f18330bdab609d8cd3b5",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://98545094a8d83b9a3c945b73d6460c61661e6e93d79501b9303e8f35242074a7",
+				"dweb:/ipfs/QmS9vXLZa5uc9XoPHUvQJrYWvDLtSkqMhoGNYQF5CZ3qVf"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,86 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "email",
+						"type": "string"
+					}
+				],
+				"name": "getDeployedElection",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					},
+					{
+						"name": "",
+						"type": "string"
+					},
+					{
+						"name": "",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "email",
+						"type": "string"
+					},
+					{
+						"name": "election_name",
+						"type": "string"
+					},
+					{
+						"name": "election_description",
+						"type": "string"
+					}
+				],
+				"name": "createElection",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/election.sol": "ElectionFact"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/election.sol": {
+			"keccak256": "0xf92e9ba7a4da7b0e7af6083407a1005fb9d14f45e2aff82a7ab7fa1eda67253c",
+			"urls": [
+				"bzzr://55e17836a68245478d9c9d3b22435a63956753aae33c8263bcfebc8596fbee79"
+			]
+		}
+	},
+	"version": 1
+}

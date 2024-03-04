@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.6.12+commit.27d51765"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getAge",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/inheritance.sol": "parent"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/inheritance.sol": {
+			"keccak256": "0x52ab3464d7f61a595a6285eb4df6d72f1b4ec158e24eb8f52ee8aab9d1d95b65",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3235553b703cd399eef45263319dde332338b363c5b2ba78793f540cdc9e8a7a",
+				"dweb:/ipfs/QmdxZtjEwnZxZXhhnouzSiCEchrhqJAHAoZQXAFozaFfYN"
+			]
+		}
+	},
+	"version": 1
+}
