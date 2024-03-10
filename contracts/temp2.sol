@@ -38,8 +38,10 @@ constructor() {
         address voterAddress;
         bool register;
         bool voted;
+        bool isDelegateVote;
         uint transferedVote;
         uint id;
+        string name;
     }
 
     mapping (address=>candidates) public CandidateList;
@@ -71,7 +73,7 @@ function allCandidates()view public returns (candidates[]memory){
 }
 
 // function to register voter
-    function registerVoter( address _voterAddress)   public {
+    function registerVoter( address _voterAddress,string memory name)   public {
         require(votingStarted==false);
         require(votingAdmin==msg.sender,"only admin can register voter");
         require(_voterAddress!=votingAdmin,"admin cannot register for vote");
@@ -79,9 +81,11 @@ function allCandidates()view public returns (candidates[]memory){
         voters memory voter=voters({
             register:true,
             voted:false,
+            isDelegateVote:false,
             voterAddress:_voterAddress,
             transferedVote:0,
-            id:displayVoter.length
+            id:displayVoter.length,
+            name:name
         } );
         VoterList[_voterAddress]=voter;
         displayVoter.push(voter);
@@ -160,7 +164,7 @@ function winnerDeclare( ) view  public returns(string memory) {
 }
 // function to delegate vote
 function delegateVote( address _delegate)   public  {
-     uint _senderID=VoterList[msg.sender].id;
+    uint _senderID=VoterList[msg.sender].id;
     uint _receiverID=VoterList[_delegate].id;
     require(choice==vStatus.ongoing,"voting must be ongoing to delegate vote");
     require(displayVoter[_senderID].voterAddress==msg.sender);
@@ -171,13 +175,16 @@ function delegateVote( address _delegate)   public  {
      VoterList[_delegate].transferedVote++;
     if (VoterList[msg.sender].transferedVote==0){
         VoterList[msg.sender].voted=true;
+        VoterList[msg.sender].isDelegateVote=true;
         displayVoter[_senderID].voted=true;
+        displayVoter[_senderID].isDelegateVote=true;
         displayVoter[_receiverID].transferedVote++;
     }
     else{
         VoterList[msg.sender].transferedVote--;
         displayVoter[_senderID].transferedVote--;
-         displayVoter[_receiverID].transferedVote++;
+        displayVoter[_receiverID].transferedVote++;
+        displayVoter[_senderID].isDelegateVote=true;
     }
 }
 }

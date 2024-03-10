@@ -93,6 +93,11 @@
 						"type": "bool"
 					},
 					{
+						"internalType": "bool",
+						"name": "isDelegateVote",
+						"type": "bool"
+					},
+					{
 						"internalType": "uint256",
 						"name": "transferedVote",
 						"type": "uint256"
@@ -101,6 +106,11 @@
 						"internalType": "uint256",
 						"name": "id",
 						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -168,6 +178,11 @@
 								"type": "bool"
 							},
 							{
+								"internalType": "bool",
+								"name": "isDelegateVote",
+								"type": "bool"
+							},
+							{
 								"internalType": "uint256",
 								"name": "transferedVote",
 								"type": "uint256"
@@ -176,6 +191,11 @@
 								"internalType": "uint256",
 								"name": "id",
 								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
 							}
 						],
 						"internalType": "struct election.voters[]",
@@ -235,6 +255,11 @@
 						"internalType": "address",
 						"name": "_voterAddress",
 						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
 					}
 				],
 				"name": "registerVoter",
@@ -304,11 +329,11 @@
 	},
 	"sources": {
 		"contracts/temp2.sol": {
-			"keccak256": "0x2ac21704b523652ad5ca25c8bf2db3e7ab5fafcf7a0842020a583ef4d83ac2f6",
+			"keccak256": "0xb53e2e5ddd3bbab9a2222c25323e076332f44b4512969a8b8f86e873f888f747",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://0a9ecf7d4db5ab3ee04c0170f7c00318ce18b6c9a807585fdec4bd4a690fbcc2",
-				"dweb:/ipfs/QmRZQTZrEcXtHFMTL7XzZggPq72VyypqP5JLhXuH87LQiU"
+				"bzz-raw://713e12d64fe660549e0de65d960fc2f43d75d1562e9023ae96ee13e07fc144a4",
+				"dweb:/ipfs/QmVejKRTfkEnKuL9xavZoeWAsJyNyVZWDpbpKMyKBNdZNM"
 			]
 		}
 	},
